@@ -10,20 +10,15 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-// bepaal de rechthoek rondom het gebouw van AP
-// kleur de rechthoek in met de rode AP-kleur
+let coffeeIcon = L.icon({
+    iconUrl: './images/coffee-icon.png',
+    shadowUrl: './images/coffee-icon-shadow.png',
 
-let bounds = [[51.23041, 4.4155], [51.22991, 4.41675]];
+    iconSize:     [60, 60], // size of the icon
+    shadowSize:   [60, 60], // size of the shadow
+    iconAnchor:   [51.23009, 4.41616], // point of the icon which will correspond to marker's location
+    shadowAnchor: [51.23009, 4.41616],  // the same for the shadow
+    popupAnchor:  [400, 500] // point from which the popup should open relative to the iconAnchor
+});
 
-// define rectangle geographical bounds
-L.rectangle(bounds, {color: "#FF0000" , weight: 1}).addTo(map);
-
-// plaats een marker met als tekst "AP-Hogeschool" en eronder "Ellermanstraat 33"
-// let popup = L.popup()
-//     .setLatLng([51.23009, 4.41616])
-//     .setContent("AP Hogeschool<br>Ellermanstraat 33")
-//     .openOn(map);
-
-let marker = L.marker([51.23009, 4.41616]).addTo(map);
-marker.bindPopup("<strong>AP-Hogeschool</strong><br>Ellermanstraat 33").openPopup(); 
-
+let marker = L.marker([51.23009, 4.41616], {icon: coffeeIcon}).addTo(map);
