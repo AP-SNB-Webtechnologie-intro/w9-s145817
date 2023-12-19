@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Dé koffie-website</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
@@ -16,106 +16,164 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- eigen geschreven css voor jouw html-bestand -->
   <link href="./css/style.css" rel="stylesheet">
-
+  <script src="./js/script-clients.js" defer></script>
 </head>
 
-<body class="p-3 m-0 border-0 bd-example"></body>
-<nav class="navbar navbar-expand-md bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html"><img src="./images/coffee.png" alt="Koffie & co" width="100" height="100">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="recepten.html">recepten</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">shop</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item active" href="shop.html">shop</a></li>
-            <li><a class="dropdown-item" href="checkout.html">checkout</a></li>
-            <li><a class="dropdown-item" href="klanten.html">klanten</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">contact</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
-        <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
-      </form>
+<body class="p-3 m-0 border-0 bd-example">
+  <nav class="navbar navbar-expand-md bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./images/coffee.png" alt="Koffie & co" width="100" height="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="recepten.html">recepten</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">shop</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="shop.html">shop</a></li>
+              <li><a class="dropdown-item" href="checkout.html">checkout</a></li>
+              <li><a class="dropdown-item" href="klanten.html">klanten</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
+          <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <header class="row m-5">
+    <h1 class="col display-2 koffiebruin text-center">may the coffee<br>be with you</h1>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <main class="col-md-9 pe-3">
+        <section class="row">
+          <article class="col-md-6 mb-3 p-3">
+            <h2 class="text-uppercase fs-4 fw-bolder">koffiebonen</h2>
+            <p class="justify pe-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati nulla aut
+              quaerat sint molestiae minima reiciendis magni, vel tempora, voluptatum modi delectus inventore esse
+              repellendus hic consectetur repellat amet ex dignissimos? Ullam amet, adipisci necessitatibus, animi modi
+              sunt earum, hic repellendus eaque veniam autem cumque dolores. Ad facere illo amet officiis alias est
+              provident consequuntur quasi at magnam distinctio, numquam exercitationem ipsum ullam libero corrupti non,
+              id tenetur. Ullam blanditiis aperiam beatae reiciendis ipsam. Reiciendis unde nisi consectetur pariatur
+              commodi repellat quod, optio voluptates distinctio perspiciatis provident magnam iure vitae natus officia
+              sunt corporis architecto nobis eos. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+              voluptate illo ipsum assumenda cum pariatur, commodi hic culpa voluptatibus perferendis!</p>
+          </article>
+          <article class="col-md-6 mb-3 p-3">
+            <h2 class="text-uppercase fs-4 fw-bolder">koffiemolens</h2>
+            <p class="justify pe-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae voluptates
+              deserunt sapiente nihil numquam quaerat quisquam, reiciendis esse facilis laudantium quis mollitia in
+              delectus expedita voluptatem, amet dolore, quas debitis saepe culpa dignissimos ipsam vel voluptas.
+              Aperiam quis amet non repellendus saepe iusto nulla assumenda, laboriosam modi fuga repellat maiores ex
+              totam incidunt delectus eveniet voluptas minus accusantium ullam placeat minima esse vel? Optio quibusdam
+              velit libero rerum quas consequatur, unde qui itaque, facere animi non quos deserunt ipsam laudantium
+              neque et atque odio tempora nisi similique voluptatem rem placeat earum. Commodi nam reiciendis incidunt
+              placeat tempore autem ut quidem.</p>
+          </article>
+        </section>
+
+        <hr class="mb-3 p-3">
+
+        <section id="slider" class="row">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/pexels-6-tom-swinnen.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-uppercase fs-5 fw-bolder pt-3">Koffiemolens</h5>
+                  <p>The old fashion way... © Tom Swinnen</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/pexels-3-adam-lukac.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-uppercase fs-5 fw-bolder pt-3">... en bonen</h5>
+                  <p>Dé koffiemelange... © Adam Lukac</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/pexels-4-juan-pablo-serrano-arenas.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-uppercase fs-5 fw-bolder pt-3">Een ideale combo!</h5>
+                  <p>© Juan Arenas</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </section>
+        <hr class="mb-3 p-3">
+
+      </main>
+
+      <aside class="col-md-3 border-start ps-5">
+        <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
+        <p>COFFEE shop<br>
+          email <a href="mailto:mail@ap-coffeeshop.be">mail@ap-coffeeshop.be</a><br>
+          phone +32 123 / 45 67 89</p>
+        <ul class="list-inline socials">
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com" target="_blank">
+              <i class="bi bi-youtube koffiebruin fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="bi bi-instagram koffiebruin fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="bi bi-facebook koffiebruin fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/" target="_blank">
+              <i class="bi bi-twitter koffiebruin fs-3"></i>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
     </div>
   </div>
-</nav>
-<header class="row m-5">
-  <h1 class="col display-2 koffiebruin text-center">may the coffee<br>be with you</h1>
-</header>
 
-<div class="container">
-  <div class="row">
-    <main class="col-md-9 pe-3">
-      <section id="shopintro" class="row">
-        <article class="col-12 col-md-6 mb-3">
-          <h2 class="text-uppercase fs-4 fw-bolder pt-3">koffiebonen</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quidem consequatur officiis labore
-            ex, expedita omnis architecto dolore ratione aliquid. Expedita libero est tempore esse distinctio?
-            Autem voluptas exercitationem eius quas harum magni obcaecati nemo cum voluptatum voluptatem maiores
-            quibusdam voluptates laudantium perspiciatis minima labore quod, id itaque iure nostrum.</p>
-        </article>
-        <article class="col-12 col-md-6 mb-3">
-          <h2 class="text-uppercase fs-4 fw-bolder pt-3">koffiemolen</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quidem consequatur officiis labore
-            ex, expedita omnis architecto dolore ratione aliquid. Expedita libero est tempore esse distinctio?
-            Autem voluptas exercitationem eius quas harum magni obcaecati nemo cum voluptatum voluptatem maiores
-            quibusdam voluptates laudantium perspiciatis minima labore quod, id itaque iure nostrum.</p>
-        </article>       
-
-       
-      </section>
-      <hr>
-    </main>
-
-
-
-<aside class="col-md-3">
-  <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
-  <p>COFFEE shop<br>
-    email <a href="mailto:mail@ap-coffeeshop.be">mail@ap-coffeeshop.be</a><br>
-    phone +32 123 / 45 67 89</p>
-  <ul class="list-inline socials">
-    <li class="list-inline-item">
-      <a href="https://www.youtube.com" target="_blank">
-        <i class="bi bi-youtube"></i>
-      </a>
-    </li>
-    <li class="list-inline-item">
-      <a href="https://www.instagram.com" target="_blank">
-        <i class="bi bi-instagram"></i>
-      </a>
-    </li>
-    <li class="list-inline-item">
-      <a href="https://www.facebook.com" target="_blank">
-        <i class="bi bi-facebook"></i>
-      </a>
-    </li>
-    <li class="list-inline-item">
-      <a href="https://twitter.com/" target="_blank">
-        <i class="bi bi-twitter"></i>
-      </a>
-    </li>
-  </ul>
-</aside>
-
-<footer class="container-fluid text-center h6 small p-4">&copy; 2023 koffie enzo</footer>
+  <footer class="container-fluid text-center h6 small p-4">&copy; 2023 koffie enzo</footer>
 </body>
 
 </html>
